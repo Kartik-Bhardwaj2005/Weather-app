@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+}
+.container {
+    width: 60vmin;
+    height: 80vmin;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    padding: 2rem;
+}
+@media(min-width: 0px) and (max-width: 550px){
+    .container {
+        width: 100vmin;
+        height: 100vmin;
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        padding: 2rem;
+    }
+}
+
+/* search-sec */
+form {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search-bar {
+    width: 85%;
+    height: 100%;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.search-icon {
+    width: 9.75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    font-size: 1.15rem;
+    outline: none;
+}
+@media(min-width: 0px) and (max-width: 550px){
+    .search-icon {
+        width: 7%;
+        height: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* temperature-sec */
+.temp-sec {
+    width: 100%;
+    height: 60%;
+    margin: 2rem 0 1rem 0;
+}
+.weather-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    color: #ffffff;
+}
+.discription {
+    width: 100%;
+    height: 7%;
+    text-align: center;
+    font-size: 1rem;
+}
+.temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    font-size: 8vmin;
+    padding-top: 1.5rem;
+    color: #ffffff;
+}
+.city-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    font-size: 5vmin;
+    color: #ffffff;
+}
+
+/* Humidity and windSpeed sec */
+.extra-info {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.humidity {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 8vmin;
+    color: #ffffff;
+    padding-right: 0.55rem;
+}
+.humid-rate {
+    margin-left: 0.5rem;
+}
+.rate1 {
+    width: 100%;
+    height: 50%;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+.name {
+    width: 100%;
+    height: 50%;
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+.wind-speed {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 50%;
+    height: 100%;
+    font-size: 8vmin;
+    color: #ffffff;
+    padding-left: 0.55rem;
+}
+.wind-rate {
+    margin-left: 0.5rem;
+}
+.rate2 {
+    width: 100%;
+    height: 50%;
+    font-size: 1.25rem;
+    color: #ffffff;
+}

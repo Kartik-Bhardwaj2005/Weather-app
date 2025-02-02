@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <!--search-sec-->
+            <form>
+                <input type="text" placeholder="enter city name" value="Delhi" class="search-bar">
+                <button class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <!--Temperature section-->
+            <div class="temp-sec">
+                <div class="weather-icon">
+                </div>
+                <div class="discription"></div>
+                <div class="temperature">
+                </div>
+                <div class="city-name">
+                </div>
+            </div>
+            
+            <!--Humidity and wind Speed section-->
+            <div class="extra-info">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="humid-rate">
+                        <div class="rate1"></div>
+                        <div class="name">Humidity</div>
+                    </div>
+                </div>
+                <div class="wind-speed">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="wind-rate">
+                        <div class="rate2"></div>
+                        <div class="name">Wind speed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
